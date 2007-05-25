@@ -1,4 +1,5 @@
 Summary:	A Telepathy connection manager for IRC
+Summary(pl.UTF-8):	Zarządca połączeń Telepathy dla IRC-a
 Name:		telepathy-idle
 Version:	0.1.0
 Release:	1
@@ -18,6 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A connection manager to connect Telepathy to IRC.
+
+%description -l pl.UTF-8
+Zarządca połączeń pozwalający połączyć się Telepathy z IRC-em.
 
 %prep
 %setup -q
