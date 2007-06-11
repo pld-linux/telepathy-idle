@@ -13,8 +13,11 @@ BuildRequires:	automake >= 1:1.8
 BuildRequires:	dbus-glib-devel >= 0.61
 BuildRequires:	libtool
 BuildRequires:	libxslt-progs
+BuildRequires:	openssl-devel >= 0.9.7
 BuildRequires:	pkgconfig
-BuildRequires:	telepathy-glib-devel
+BuildRequires:	telepathy-glib-devel >= 0.5.13-2
+# telepathy-glib-unstable interface needs static library
+BuildRequires:	telepathy-glib-static >= 0.5.13-2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
