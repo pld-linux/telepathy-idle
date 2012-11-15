@@ -1,15 +1,16 @@
 Summary:	A Telepathy connection manager for IRC
 Summary(pl.UTF-8):	Zarządca połączeń Telepathy dla IRC-a
 Name:		telepathy-idle
-Version:	0.1.12
+Version:	0.1.13
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-idle/%{name}-%{version}.tar.gz
-# Source0-md5:	e77e5b84cc8f77cf12d15727c30df366
+# Source0-md5:	a82a6f15bf12e21285e6a36256c2bde0
 URL:		http://telepathy.freedesktop.org/wiki/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
+BuildRequires:	dbus-devel >= 0.51
 BuildRequires:	dbus-glib-devel >= 0.61
 BuildRequires:	glib2-devel >= 1:2.30.0
 BuildRequires:	libtool
@@ -18,6 +19,7 @@ BuildRequires:	openssl-devel >= 0.9.7
 BuildRequires:	pkgconfig
 BuildRequires:	python >= 2.3
 BuildRequires:	telepathy-glib-devel >= 0.15.9
+Requires:	dbus >= 0.51
 Requires:	dbus-glib >= 0.61
 Requires:	glib2 >= 1:2.30.0
 Requires:	telepathy-glib >= 0.15.9
