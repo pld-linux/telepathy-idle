@@ -1,12 +1,13 @@
 Summary:	A Telepathy connection manager for IRC
 Summary(pl.UTF-8):	Zarządca połączeń Telepathy dla IRC-a
 Name:		telepathy-idle
-Version:	0.1.14
+Version:	0.1.15
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-idle/%{name}-%{version}.tar.gz
-# Source0-md5:	c292c54aa08f61544ab53fda880d861c
+# Source0-md5:	56f960ed1d9ed0c01e0b9f7eb68dbebe
+Patch0:		%{name}-am.patch
 URL:		http://telepathy.freedesktop.org/wiki/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
@@ -33,6 +34,7 @@ Zarządca połączeń pozwalający połączyć się Telepathy z IRC-em.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}

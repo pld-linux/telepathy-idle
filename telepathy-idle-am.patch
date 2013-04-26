@@ -1,0 +1,11 @@
+--- telepathy-idle-0.1.15/configure.ac.orig	2013-04-24 15:46:25.000000000 +0200
++++ telepathy-idle-0.1.15/configure.ac	2013-04-26 19:51:33.607510146 +0200
+@@ -34,7 +34,7 @@
+ AM_INIT_AUTOMAKE([1.9 -Wno-portability])
+ 
+ AM_PROG_LIBTOOL
+-AM_CONFIG_HEADER(config.h)
++AC_CONFIG_HEADERS(config.h)
+ AM_PROG_MKDIR_P
+ 
+ dnl check for tools
